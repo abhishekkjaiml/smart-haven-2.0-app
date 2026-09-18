@@ -795,9 +795,9 @@ flowchart LR
 
 # 🎬 Animated UI
 
-SmartHaven 2.0 uses **React Native Reanimated** to make the interface feel interactive and responsive.
+SmartHaven 2.0 uses **React Native Reanimated** to make the mobile interface feel smooth, interactive and responsive.
 
-The animations are not only decorative; they are used to improve transitions, feedback and visual hierarchy.
+The animations are used for page transitions, sidebar interactions, sensor cards, alerts, modals, loading states, buttons, theme changes and live device updates.
 
 ---
 
@@ -808,9 +808,9 @@ flowchart TB
 
     MOTION["🎬 React Native Reanimated"]
 
-    PAGE["📄 Page Transitions"]
+    PAGE["📱 Screen Transitions"]
 
-    SIDEBAR["🧭 Sidebar Open / Close"]
+    SIDEBAR["🧭 Sidebar / Drawer Open & Close"]
 
     CARDS["📊 Sensor Card Animation"]
 
@@ -824,9 +824,9 @@ flowchart TB
 
     THEME["🌙 Theme Transition"]
 
-    DEVICE["📡 Device Status"]
+    DEVICE["📡 Device Status Animation"]
 
-    DATA["🧪 Dummy Data Update"]
+    DATA["🧪 Dummy Sensor Update Animation"]
 
     MOTION --> PAGE
     MOTION --> SIDEBAR
@@ -844,10 +844,10 @@ flowchart TB
 
 # 🎞️ Animated Experience
 
-### 📄 Page Entry
+### 📱 Screen Entry
 
 ```text
-Page Load
+Screen Load
    ↓
 Opacity 0
    ↓
@@ -856,6 +856,20 @@ Fade In
 Slide Up
    ↓
 Content Visible
+```
+
+### 🧭 Sidebar / Drawer
+
+```text
+Menu Button
+    ↓
+Sidebar Open
+    ↓
+Slide In
+    ↓
+Overlay Fade In
+    ↓
+Sidebar Visible
 ```
 
 ### 📊 Dashboard Cards
@@ -889,6 +903,65 @@ Dismiss
       ↓
 Fade Out
 ```
+
+### 🔄 Loading
+
+```text
+Loading Start
+      ↓
+Spinner / Pulse
+      ↓
+Data Loaded
+      ↓
+Fade Out
+      ↓
+Content Visible
+```
+
+### 🌙 Theme Transition
+
+```text
+Theme Toggle
+      ↓
+Detect Light / Dark
+      ↓
+Animate UI Values
+      ↓
+Update Components
+      ↓
+New Theme Visible
+```
+
+### 📡 Live Sensor Updates
+
+```text
+Sensor Update
+      ↓
+Socket.IO Event
+      ↓
+React Native State
+      ↓
+Animated Value Change
+      ↓
+Updated Sensor Card
+```
+
+---
+
+# 🎯 Animation Features
+
+* ✨ Smooth screen transitions
+* 🧭 Animated sidebar / drawer
+* 📊 Staggered sensor cards
+* 🚨 Animated environmental alerts
+* 🪟 Animated modals
+* 🔄 Loading animations
+* 🎯 Button press interactions
+* 🌙 Smooth theme transitions
+* 📡 Device status animations
+* 🧪 Dummy sensor update animations
+* 👆 Touch-friendly animated interactions
+* ⚡ Smooth real-time UI updates
 
 ---
 
