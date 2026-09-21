@@ -1,5 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 import { Leaf } from "lucide-react-native";
+import { useState } from "react";
 import {
   ImageBackground,
   KeyboardAvoidingView,
@@ -14,6 +16,12 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const onShowEyeClick = () => {
+    setShowPassword((prev) => !prev);
+  };
+
   return (
     <SafeAreaView className="flex-1 bg-slate-50 flex-row ">
       <KeyboardAvoidingView
@@ -39,7 +47,7 @@ const Login = () => {
                   <Text className="text-blue-600 font-extrabold">Haven</Text>
                 </Text>
               </View>
-              <Text className="mt-[3px] text-[15px] font-medium text-sla-500">
+              <Text className="mt-[3px] text-[15px] font-medium text-slate-500">
                 Clean Air. Better Living.
               </Text>
             </View>
@@ -96,13 +104,19 @@ const Login = () => {
                     placeholder="Enter your password"
                     autoCapitalize="none"
                     autoCorrect={false}
+                    secureTextEntry={!showPassword}
                   />
 
                   <TouchableOpacity
                     className=" w-[45px] items-center justify-center"
                     activeOpacity={0.7}
+                    onPress={onShowEyeClick}
                   >
-                    <Ionicons name="eye" size={21} color={"#64748B"} />
+                    <Ionicons
+                      name={showPassword ? "eye-off-outline" : "eye"}
+                      size={21}
+                      color={"#64748B"}
+                    />
                   </TouchableOpacity>
                 </View>
               </View>
@@ -123,6 +137,7 @@ const Login = () => {
               <TouchableOpacity
                 className="h-14 rounded-2xl bg-blue-600 items-center justify-center"
                 activeOpacity={0.85}
+                onPress={() => router.replace("/(tabs)/Home")}
               >
                 <Text className="text-[17px] font-bold text-white">Login</Text>
               </TouchableOpacity>
