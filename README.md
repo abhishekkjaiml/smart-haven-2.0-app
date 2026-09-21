@@ -19,6 +19,7 @@
 <img src="https://img.shields.io/badge/Mobile App-React Native-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
 <img src="https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/>
 <img src="https://img.shields.io/badge/UI-NativeWind-00C896?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Icons-Lucide%20React%20Native-F56565?style=for-the-badge&logo=lucide&logoColor=white"/>
 <img src="https://img.shields.io/badge/Firebase-🔥-FFCA28?style=for-the-badge&logo=firebase&logoColor=black"/>
 
 </p>
@@ -33,42 +34,42 @@
 
 # 📑 Table of Contents
 
-* [🌟 About SmartHaven](#-about-smarthaven)
-* [🎯 Project Objective](#-project-objective)
-* [🧠 SmartHaven Entity Graph](#-smarthaven-entity-graph)
-* [🏗️ Complete System Architecture](#️-complete-system-architecture)
-* [🔄 Real-Time Data Flow](#-real-time-data-flow)
-* [🧬 Entity Relationship Diagram](#-entity-relationship-diagram)
-* [🧪 Offline Dummy Mode](#-offline-dummy-mode)
-* [🤖 IoT Hardware Architecture](#-iot-hardware-architecture)
-* [📡 Sensor Data Pipeline](#-sensor-data-pipeline)
-* [🔐 Authentication Architecture](#-authentication-architecture)
-* [🏠 Device Claiming](#-device-claiming)
-* [🚨 Alert System](#-alert-system)
-* [🎬 Animated UI](#-animated-ui)
-* [🎨 UI/UX Design](#-uiux-design)
-* [✨ Core Features](#-core-features)
-* [🛠️ Technology Stack](#️-technology-stack)
-* [📦 Dependencies](#-dependencies)
-* [📊 Monitoring Parameters](#-monitoring-parameters)
-* [📂 Project Structure](#-project-structure)
-* [🚀 Installation](#-installation)
-* [🔧 Project Setup](#-project-setup)
-* [🔑 Environment Variables](#-environment-variables)
-* [🧪 Running Demo Mode](#-running-demo-mode)
-* [📸 Screenshots](#-screenshots)
-* [🎥 Demo](#-demo)
-* [🔄 Application Lifecycle](#-application-lifecycle)
-* [📱 Responsive Design](#-responsive-design)
-* [🌙 Theme System](#-theme-system)
-* [📡 Device Status](#-device-status)
-* [🔒 Security](#-security)
-* [🧪 Testing](#-testing)
-* [🗺️ Development Roadmap](#️-development-roadmap)
-* [📚 Development Documentation](#-development-documentation)
-* [🤝 Contributing](#-contributing)
-* [📄 License](#-license)
-* [👨‍💻 Developer](#-developer)
+- [🌟 About SmartHaven](#-about-smarthaven)
+- [🎯 Project Objective](#-project-objective)
+- [🧠 SmartHaven Entity Graph](#-smarthaven-entity-graph)
+- [🏗️ Complete System Architecture](#️-complete-system-architecture)
+- [🔄 Real-Time Data Flow](#-real-time-data-flow)
+- [🧬 Entity Relationship Diagram](#-entity-relationship-diagram)
+- [🧪 Offline Dummy Mode](#-offline-dummy-mode)
+- [🤖 IoT Hardware Architecture](#-iot-hardware-architecture)
+- [📡 Sensor Data Pipeline](#-sensor-data-pipeline)
+- [🔐 Authentication Architecture](#-authentication-architecture)
+- [🏠 Device Claiming](#-device-claiming)
+- [🚨 Alert System](#-alert-system)
+- [🎬 Animated UI](#-animated-ui)
+- [🎨 UI/UX Design](#-uiux-design)
+- [✨ Core Features](#-core-features)
+- [🛠️ Technology Stack](#️-technology-stack)
+- [📦 Dependencies](#-dependencies)
+- [📊 Monitoring Parameters](#-monitoring-parameters)
+- [📂 Project Structure](#-project-structure)
+- [🚀 Installation](#-installation)
+- [🔧 Project Setup](#-project-setup)
+- [🔑 Environment Variables](#-environment-variables)
+- [🧪 Running Demo Mode](#-running-demo-mode)
+- [📸 Screenshots](#-screenshots)
+- [🎥 Demo](#-demo)
+- [🔄 Application Lifecycle](#-application-lifecycle)
+- [📱 Responsive Design](#-responsive-design)
+- [🌙 Theme System](#-theme-system)
+- [📡 Device Status](#-device-status)
+- [🔒 Security](#-security)
+- [🧪 Testing](#-testing)
+- [🗺️ Development Roadmap](#️-development-roadmap)
+- [📚 Development Documentation](#-development-documentation)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [👨‍💻 Developer](#-developer)
 
 ---
 
@@ -114,19 +115,19 @@ The primary goal of SmartHaven is to create a complete environment monitoring ec
 
 ### Main objectives
 
-* 🌡️ Monitor temperature
-* 💧 Monitor humidity
-* 💨 Monitor gas levels
-* 🌿 Monitor Air Quality Index
-* 📡 Connect IoT devices
-* ⚡ Receive real-time sensor updates
-* 🔐 Provide secure authentication
-* 🏠 Allow device claiming
-* 🚨 Display environmental alerts
-* 🧪 Provide offline simulation
-* 🎬 Create an interactive animated interface
-* 📱 Support responsive layouts
-* 📊 Prepare the foundation for future analytics
+- 🌡️ Monitor temperature
+- 💧 Monitor humidity
+- 💨 Monitor gas levels
+- 🌿 Monitor Air Quality Index
+- 📡 Connect IoT devices
+- ⚡ Receive real-time sensor updates
+- 🔐 Provide secure authentication
+- 🏠 Allow device claiming
+- 🚨 Display environmental alerts
+- 🧪 Provide offline simulation
+- 🎬 Create an interactive animated interface
+- 📱 Support responsive layouts
+- 📊 Prepare the foundation for future analytics
 
 ---
 
@@ -454,17 +455,17 @@ flowchart TD
 
 Dummy Mode allows the application to:
 
-* Run without physical hardware
-* Run without ESP32
-* Test the dashboard independently
-* Simulate sensor readings
-* Test alert states
-* Test loading states
-* Test responsive UI
-* Test sidebar behavior
-* Test dark/light mode
-* Test animations
-* Demonstrate the project easily
+- Run without physical hardware
+- Run without ESP32
+- Test the dashboard independently
+- Simulate sensor readings
+- Test alert states
+- Test loading states
+- Test responsive UI
+- Test sidebar behavior
+- Test dark/light mode
+- Test animations
+- Demonstrate the project easily
 
 ### Example simulated data
 
@@ -635,14 +636,14 @@ flowchart LR
 
 # 🔐 Authentication Features
 
-* Email/password authentication
-* Firebase Authentication
-* Protected dashboard
-* Login validation
-* Authentication error handling
-* Session-based application access
-* Logout support
-* Demo login support
+- Email/password authentication
+- Firebase Authentication
+- Protected dashboard
+- Login validation
+- Authentication error handling
+- Session-based application access
+- Logout support
+- Demo login support
 
 ---
 
@@ -824,20 +825,20 @@ SmartHaven is designed as a modern environment monitoring dashboard.
 
 # 🎨 UI Features
 
-* ✨ Modern dashboard cards
-* 🌙 Dark Mode
-* ☀️ Light Mode
-* 🧭 Responsive Sidebar
-* 📱 Responsive Dashboard
-* 🎬 Smooth transitions
-* 🚨 Custom alerts
-* 🪟 Custom modals
-* 🔄 Loading states
-* 📡 Device status
-* 👤 User profile
-* ⏱️ Last updated information
-* 🎯 Interactive controls
-* 🧪 Demo mode indicator
+- ✨ Modern dashboard cards
+- 🌙 Dark Mode
+- ☀️ Light Mode
+- 🧭 Responsive Sidebar
+- 📱 Responsive Dashboard
+- 🎬 Smooth transitions
+- 🚨 Custom alerts
+- 🪟 Custom modals
+- 🔄 Loading states
+- 📡 Device status
+- 👤 User profile
+- ⏱️ Last updated information
+- 🎯 Interactive controls
+- 🧪 Demo mode indicator
 
 ---
 
@@ -845,13 +846,13 @@ SmartHaven is designed as a modern environment monitoring dashboard.
 
 ## 🔐 Authentication
 
-* Firebase email/password authentication
-* Login UI
-* Validation
-* Error handling
-* Protected dashboard
-* Logout
-* Demo login
+- Firebase email/password authentication
+- Login UI
+- Validation
+- Error handling
+- Protected dashboard
+- Logout
+- Demo login
 
 ---
 
@@ -861,25 +862,25 @@ Dashboard provides a centralized view of the environment.
 
 Includes:
 
-* Temperature
-* Humidity
-* H₂
-* CO
-* CH₄
-* AQI
-* Device status
-* Last updated time
+- Temperature
+- Humidity
+- H₂
+- CO
+- CH₄
+- AQI
+- Device status
+- Last updated time
 
 ---
 
 ## 📡 Device Management
 
-* Device ID input
-* Device validation
-* Device claiming
-* Connection state
-* Device status
-* Real-time device updates
+- Device ID input
+- Device validation
+- Device claiming
+- Connection state
+- Device status
+- Real-time device updates
 
 ---
 
@@ -900,22 +901,22 @@ SmartHaven monitors:
 
 ## 🧪 Demo Mode
 
-* Dummy user
-* Dummy device
-* Dummy sensor values
-* Simulated updates
-* No hardware required
-* UI testing
-* Project demonstration
+- Dummy user
+- Dummy device
+- Dummy sensor values
+- Simulated updates
+- No hardware required
+- UI testing
+- Project demonstration
 
 ---
 
 ## 🌙 Theme
 
-* Light Mode
-* Dark Mode
-* Theme-aware components
-* Smooth theme transition
+- Light Mode
+- Dark Mode
+- Theme-aware components
+- Smooth theme transition
 
 ---
 
@@ -923,10 +924,10 @@ SmartHaven monitors:
 
 Designed for:
 
-* 🖥️ Desktop / Large Display
-* 💻 Tablet
-* 📱 Mobile
-* 📱 Small Mobile
+- 🖥️ Desktop / Large Display
+- 💻 Tablet
+- 📱 Mobile
+- 📱 Small Mobile
 
 ---
 
@@ -937,14 +938,14 @@ Designed for:
 | Technology                 | Purpose                   |
 | -------------------------- | ------------------------- |
 | ⚛️ React Native            | Mobile application        |
-| ⚡ Expo                     | Development and build     |
+| ⚡ Expo                    | Development and build     |
 | 🟨 JavaScript              | Application logic         |
 | 🎨 NativeWind              | Utility-first styling     |
 | 🧭 Expo Router             | File-based navigation     |
 | 🧭 React Navigation        | Navigation infrastructure |
 | 🎬 React Native Reanimated | Animations                |
 | 🧩 Lucide React Native     | Icons                     |
-| 🖼️ Expo Image             | Image rendering           |
+| 🖼️ Expo Image              | Image rendering           |
 | 📱 Expo Status Bar         | Status bar management     |
 | 🎯 Expo Vector Icons       | Icon support              |
 
@@ -961,7 +962,7 @@ The backend is not maintained as a local backend application inside the mobile r
 | ☁️ Render     | Backend hosting             |
 | 🟢 Node.js    | Backend runtime             |
 | 🚂 Express.js | REST API                    |
-| ⚡ Socket.IO   | Real-time communication     |
+| ⚡ Socket.IO  | Real-time communication     |
 | 🌐 REST API   | Client-server communication |
 
 > The React Native application connects to the deployed Render backend through its configured backend URL.
@@ -972,10 +973,10 @@ The backend is not maintained as a local backend application inside the mobile r
 
 Used for:
 
-* 🔐 Authentication
-* 🔄 Realtime Database
-* 👤 User management
-* ☁️ Cloud services
+- 🔐 Authentication
+- 🔄 Realtime Database
+- 👤 User management
+- ☁️ Cloud services
 
 ---
 
@@ -984,7 +985,7 @@ Used for:
 | Component          | Purpose                  |
 | ------------------ | ------------------------ |
 | 🧠 ESP32 DevKit V1 | Main IoT controller      |
-| 🌡️ DHT11          | Temperature and humidity |
+| 🌡️ DHT11           | Temperature and humidity |
 | 💨 MQ-02           | Gas detection            |
 | 📺 OLED Display    | Local sensor information |
 
@@ -1113,14 +1114,14 @@ npm install --save-dev tailwindcss
 
 | Parameter        | Sensor / Source | Unit      | Dashboard |
 | ---------------- | --------------- | --------- | :-------: |
-| 🌡️ Temperature  | DHT11           | °C        |     ✅     |
-| 💧 Humidity      | DHT11           | %         |     ✅     |
-| 💨 H₂            | MQ-02           | Gas Level |     ✅     |
-| 🏭 CO            | MQ-02           | Gas Level |     ✅     |
-| 🔥 CH₄           | MQ-02           | Gas Level |     ✅     |
-| 🌿 AQI           | Processed Data  | Index     |     ✅     |
-| 📡 Device Status | Device          | State     |     ✅     |
-| ⏱️ Last Updated  | Application     | Time      |     ✅     |
+| 🌡️ Temperature   | DHT11           | °C        |    ✅     |
+| 💧 Humidity      | DHT11           | %         |    ✅     |
+| 💨 H₂            | MQ-02           | Gas Level |    ✅     |
+| 🏭 CO            | MQ-02           | Gas Level |    ✅     |
+| 🔥 CH₄           | MQ-02           | Gas Level |    ✅     |
+| 🌿 AQI           | Processed Data  | Index     |    ✅     |
+| 📡 Device Status | Device          | State     |    ✅     |
+| ⏱️ Last Updated  | Application     | Time      |    ✅     |
 
 ---
 
@@ -1610,22 +1611,22 @@ SmartHaven is designed to adapt to different screen sizes.
 
 ### Large Screens
 
-* Expanded dashboard
-* Multiple sensor cards
-* Complete monitoring information
+- Expanded dashboard
+- Multiple sensor cards
+- Complete monitoring information
 
 ### Tablet
 
-* Responsive card layout
-* Adaptive spacing
-* Flexible navigation
+- Responsive card layout
+- Adaptive spacing
+- Flexible navigation
 
 ### Mobile
 
-* Collapsible sidebar
-* Compact cards
-* Mobile header
-* Touch-friendly controls
+- Collapsible sidebar
+- Compact cards
+- Mobile header
+- Touch-friendly controls
 
 ---
 
@@ -1658,9 +1659,7 @@ NativeWind theme example:
 
 ```jsx
 <View className="bg-white dark:bg-slate-950">
-    <Text className="text-slate-900 dark:text-white">
-        SmartHaven
-    </Text>
+  <Text className="text-slate-900 dark:text-white">SmartHaven</Text>
 </View>
 ```
 
@@ -1732,16 +1731,16 @@ SmartHaven can be tested at multiple layers.
 
 Check:
 
-* Login UI
-* Dashboard
-* Sidebar
-* Theme switching
-* Responsive layout
-* Sensor cards
-* Alerts
-* Modals
-* Loading states
-* Dummy mode
+- Login UI
+- Dashboard
+- Sidebar
+- Theme switching
+- Responsive layout
+- Sensor cards
+- Alerts
+- Modals
+- Loading states
+- Dummy mode
 
 ---
 
@@ -1749,13 +1748,13 @@ Check:
 
 Check:
 
-* Render service availability
-* REST API communication
-* Authentication validation
-* Device claiming
-* Database connectivity
-* Socket.IO connection
-* Mobile-to-backend communication
+- Render service availability
+- REST API communication
+- Authentication validation
+- Device claiming
+- Database connectivity
+- Socket.IO connection
+- Mobile-to-backend communication
 
 ---
 
@@ -1763,12 +1762,12 @@ Check:
 
 Check:
 
-* ESP32 connection
-* DHT11 readings
-* MQ-02 readings
-* OLED display
-* Network communication
-* Render backend communication
+- ESP32 connection
+- DHT11 readings
+- MQ-02 readings
+- OLED display
+- Network communication
+- Render backend communication
 
 ---
 
@@ -1895,14 +1894,14 @@ timeline
 
 Future versions can include:
 
-* 📊 Historical sensor data
-* 📈 Interactive charts
-* 📅 Daily reports
-* 📅 Weekly reports
-* 📅 Monthly reports
-* 🔍 Data filtering
-* 📤 Data export
-* 📉 Environmental trends
+- 📊 Historical sensor data
+- 📈 Interactive charts
+- 📅 Daily reports
+- 📅 Weekly reports
+- 📅 Monthly reports
+- 🔍 Data filtering
+- 📤 Data export
+- 📉 Environmental trends
 
 ---
 
@@ -1929,12 +1928,12 @@ Potential future AI functionality:
 
 Potential features:
 
-* Environmental trend analysis
-* Anomaly detection
-* AQI prediction
-* Smart recommendations
-* Environmental summaries
-* Pattern detection
+- Environmental trend analysis
+- Anomaly detection
+- AQI prediction
+- Smart recommendations
+- Environmental summaries
+- Pattern detection
 
 ---
 
@@ -1942,13 +1941,13 @@ Potential features:
 
 A future React Native application can provide:
 
-* 📱 Mobile dashboard
-* 🔐 Authentication
-* 📡 Device management
-* 📊 Sensor monitoring
-* 🚨 Push notifications
-* 📈 Analytics
-* 🌙 Dark mode
+- 📱 Mobile dashboard
+- 🔐 Authentication
+- 📡 Device management
+- 📊 Sensor monitoring
+- 🚨 Push notifications
+- 📈 Analytics
+- 🌙 Dark mode
 
 ---
 
@@ -2198,12 +2197,12 @@ Expected Benefit
 
 This project is currently intended for:
 
-* Educational purposes
-* IoT experimentation
-* Development
-* Project demonstrations
-* Learning
-* Portfolio purposes
+- Educational purposes
+- IoT experimentation
+- Development
+- Project demonstrations
+- Learning
+- Portfolio purposes
 
 A formal open-source license can be added according to the project's final distribution requirements.
 
@@ -2257,6 +2256,7 @@ A formal open-source license can be added according to the project's final distr
 <img src="https://img.shields.io/badge/Socket.IO-⚡-010101?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/IoT-🤖-00979D?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/NativeWind-🎨-00C896?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Lucide%20React%20Native-🎯-F56565?style=for-the-badge"/>
 
 </p>
 
