@@ -1,5 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useRouter } from "expo-router";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { Leaf } from "lucide-react-native";
 import { useState } from "react";
 import {
@@ -15,8 +16,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-import dummyData from "../../db/dummyData";
+import { auth } from "../../services/firebase";
 
 const Login = () => {
   const router = useRouter();
@@ -31,12 +31,13 @@ const Login = () => {
     setShowPassword((prev) => !prev);
   };
 
-  console.log(dummyData.user.displayName);
-
   const DEMO_USER = "demo@test.com";
   const DEMO_PASSWORD = "123456";
 
-  const handleLogin = () => {
+  // Handling Auth
+
+  const handleLogin = async () => {
+    // Handle Dummy / Demo user Login
     const enteredEmail = email.trim().toLowerCase();
     const enteredPassword = password.trim();
 
@@ -50,6 +51,24 @@ const Login = () => {
 
     if (isDummyUser) {
       router.replace("/(tabs)/Home");
+    }
+
+    // Handle firebase user login
+
+    try {
+      setLoading(true);
+
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        enteredEmail,
+        enteredPassword,
+      );
+
+      router.replace("/(tabs)/Home");
+    } catch (error) {
+      console.log("Firebase login error", error);
+    } finally {
+      setLoading(false);
     }
   };
 
