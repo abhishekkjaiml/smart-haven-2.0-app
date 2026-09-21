@@ -2,9 +2,9 @@ import { Tabs } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
-    Grid2X2,
-    Home as HomeIcon,
-    Settings as SettingsIcon,
+  Grid2X2,
+  Home as HomeIcon,
+  Settings as SettingsIcon,
 } from "lucide-react-native";
 
 export default function TabLayout() {
