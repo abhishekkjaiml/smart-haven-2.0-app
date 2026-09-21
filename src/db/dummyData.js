@@ -6,6 +6,10 @@ export const DUMMY_EMAIL = "demo@test.com";
 
 export const DUMMY_PASSWORD = "123456";
 
+export const demo_EMAIL = "demo@test.com";
+
+export const demo_PASSWORD = "123456";
+
 export const DUMMY_DEVICE_ID = "SH-ESP32-001";
 
 export const CLAIMED_DEVICE_KEY = "smarthaven_claimed_device";

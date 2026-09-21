@@ -1,8 +1,9 @@
 import { Ionicons } from "@expo/vector-icons";
-import { router } from "expo-router";
+import { useRouter } from "expo-router";
 import { Leaf } from "lucide-react-native";
 import { useState } from "react";
 import {
+  Alert,
   ImageBackground,
   KeyboardAvoidingView,
   Platform,
@@ -15,11 +16,41 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
+import dummyData from "../../db/dummyData";
+
 const Login = () => {
+  const router = useRouter();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const onShowEyeClick = () => {
     setShowPassword((prev) => !prev);
+  };
+
+  console.log(dummyData.user.displayName);
+
+  const DEMO_USER = "demo@test.com";
+  const DEMO_PASSWORD = "123456";
+
+  const handleLogin = () => {
+    const enteredEmail = email.trim().toLowerCase();
+    const enteredPassword = password.trim();
+
+    if (!enteredEmail || !enteredPassword) {
+      Alert.alert("Missing Details", "Please enter your email and password.");
+    }
+
+    const isDummyUser =
+      enteredEmail === DEMO_USER.trim().toLowerCase() &&
+      enteredPassword === DEMO_PASSWORD.trim();
+
+    if (isDummyUser) {
+      router.replace("/(tabs)/Home");
+    }
   };
 
   return (
@@ -79,9 +110,12 @@ const Login = () => {
                   <TextInput
                     className="flex-1 w-full px-3 text-[15px] text-slate-900"
                     placeholder="you@example.com"
+                    placeholderTextColor="#94A3B8"
                     keyboardType="email-address"
                     autoCapitalize="none"
                     autoCorrect={false}
+                    value={email}
+                    onChangeText={setEmail}
                   />
                 </View>
               </View>
@@ -102,9 +136,12 @@ const Login = () => {
                   <TextInput
                     className="flex-1 px-3 h-full text-[15px] text-slate-900"
                     placeholder="Enter your password"
+                    placeholderTextColor="#94A3B8"
+                    secureTextEntry={!showPassword}
+                    value={password}
+                    onChangeText={setPassword}
                     autoCapitalize="none"
                     autoCorrect={false}
-                    secureTextEntry={!showPassword}
                   />
 
                   <TouchableOpacity
@@ -137,16 +174,18 @@ const Login = () => {
               <TouchableOpacity
                 className="h-14 rounded-2xl bg-blue-600 items-center justify-center"
                 activeOpacity={0.85}
-                onPress={() => router.replace("/(tabs)/Home")}
+                onPress={handleLogin}
               >
-                <Text className="text-[17px] font-bold text-white">Login</Text>
+                <Text className="text-[17px] font-bold text-white">
+                  Login Now
+                </Text>
               </TouchableOpacity>
 
               {/* Others */}
 
               <View className="flex-row items-center my-[22px]">
                 <View className="flex-1 h-px bg-slate-200" />
-                <Text className="mx-3 text-[13px] font-medium text-sla-400">
+                <Text className="mx-3 text-[13px] font-medium text-slate-400">
                   Or continue with
                 </Text>
                 <View className="flex-1 h-px bg-slate-200" />
